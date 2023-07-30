@@ -1,12 +1,5 @@
 # function for vowls
 
-# name = "asma"
-
-# def say_hi(nam):
-#     return "Hi " + name
-
-# person = say_hi(name)
-# print(person )
 
 
 from collections import Counter
