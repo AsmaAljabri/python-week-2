@@ -1,4 +1,5 @@
 # function for vowls
+# make subfunction to call count vowls whenever the user 
 
 
 

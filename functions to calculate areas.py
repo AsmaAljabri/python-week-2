@@ -3,33 +3,6 @@
 #choose number from 1-6 and 6 = quitting the program usinf compound if else statement inside of the whilw loop 
 import math
 
-
-#  function for square
-def area_of_square(side):
-    s_area = side ** 2
-    return s_area
-
-#  function for circle
-def area_of_circle(radius):
-    c_area = math.pi * radius**2
-    return c_area
-
-#  function for rectangle
-def area_of_rectangle(length, width):
-    r_area = length * width
-    return r_area
-
-#  function for cylinder
-def area_of_cylinder(radius, height):
-    total_area = (2 * math.pi * radius *  height) + (2 * math.pi * (radius ** 2))
-    return total_area
-
-#  function for triangle
-def area_of_triangle(base, height):
-    t_area = (base * height) / 2
-    return t_area
-
-
 def main():
     while True:
         print("Choose the shape to calculate the area must choose from (1-6):")
@@ -78,3 +51,28 @@ def main():
 
 if __name__ == "__main__":
     main()        
+
+#  function for square
+def area_of_square(side):
+    s_area = side ** 2
+    return s_area
+
+#  function for circle
+def area_of_circle(radius):
+    c_area = math.pi * radius**2
+    return c_area
+
+#  function for rectangle
+def area_of_rectangle(length, width):
+    r_area = length * width
+    return r_area
+
+#  function for cylinder
+def area_of_cylinder(radius, height):
+    total_area = (2 * math.pi * radius *  height) + (2 * math.pi * (radius ** 2))
+    return total_area
+
+#  function for triangle
+def area_of_triangle(base, height):
+    t_area = (base * height) / 2
+    return t_area
