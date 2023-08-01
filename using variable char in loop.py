@@ -1,4 +1,4 @@
-
+# use veriable char in loop
 string = input("enter the statement")# count the number of uppercases in the string 
 uppercase =0
 for char in string:

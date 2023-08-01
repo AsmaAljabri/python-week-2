@@ -1,3 +1,8 @@
+"""
+Write Python code that go throw all numbers from 1 to 30
+and print True if the number is prime and False if not. 
+The output format should be like the following:
+"""
 def is_prime(n):
     if n <= 1:
         return False

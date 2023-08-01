@@ -1,4 +1,4 @@
-
+# program to find vowls in a word
 from collections import Counter
 
 

@@ -1,3 +1,4 @@
+#program for validation of the cvv number
 s = input("enter the CVV number in the format xxxx-xxx : ")
 valid = len(s) == 8
 position = 0

@@ -1,5 +1,5 @@
 
-
+# sum of element in list
 mylist = [3,5,1,7,2,8]
 sum = 0
 

@@ -1,3 +1,5 @@
+# program to git the type of data in list
+
 list = [1.4,4,5,"name","asma"]
 
 i = 0

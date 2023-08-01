@@ -1,3 +1,5 @@
+# function to calculate the area of regular polygon
+
 import math
 
 def area_of_regular_polygon(num, side):

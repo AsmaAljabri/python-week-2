@@ -1,4 +1,4 @@
-
+# functin to get the max number between 3 inputs
 
 A = int(input("enter the value for A"))
 B = int(input("enter the value for B"))

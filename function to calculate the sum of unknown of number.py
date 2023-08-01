@@ -1,3 +1,5 @@
+#  function to calculate the sum of unkown integers
+
 def calculate_sum(*args):
     total = 0
     for num in args:
