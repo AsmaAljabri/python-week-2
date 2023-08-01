@@ -12,7 +12,7 @@ def is_prime(n):
     return True
 
 for num in range(1, 31):
-    print(num,is_prime(num))
+    print(num,"  |  ", is_prime(num))
 
 
 
