@@ -17,7 +17,7 @@ bgcolor("black")
 for i in range (6000):
     goto(hearta(i)*20, heartb(i)*20)
     for j in range (5):
-        color("blue")
+        color("red")
     goto(0,0)
 
 done()
