@@ -1,7 +1,4 @@
 # # salary
-
-
-
 # Read salaries and names from the file
 file_s = open("salary.txt", "r")
 

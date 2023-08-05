@@ -1,22 +1,31 @@
-# import openai project
 import openai
 
-k = open("key.txt", "r")
-openai.api_key = k.read().strip("\n")
+API_KEY = "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"
+openai.api_key = API_KEY
 
+def generate_response(prompt):
+    try:
+        response = openai.Completion.create(
+            engine="text-davinci-003",
+            prompt=prompt,
+            max_tokens=50
+        )
+        generated_text = response.choices[0].text
+        return generated_text
+    except Exception as e:
+        print(f"Error in request: {e}")
+        return None
 
-messages = [ 
-        {"role": "system", "content": "you are a software engineer, use words with some emojis"},
-]
-while True:
-    message = input("user : ")
-    if not (message == "thank you"):
-        messages.append(
-            {"role" : "user", "content": message},
-        )
-        chat = openai.ChatCompletion.create(
-            model = " gpt-3.5-turbo", messages=messages
-        )
-    else:
-        break
-    reply = chat.choices[0]
+def main():
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() == "exit":
+            print("Goodbye!")
+            break
+
+        generated_response = generate_response(user_input)
+        if generated_response:
+            print("ChatGPT:", generated_response)
+
+if __name__ == "__main__":
+    main()
