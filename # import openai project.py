@@ -1,6 +1,6 @@
 import openai
 
-API_KEY = "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"
+API_KEY = "secrit_api key"
 openai.api_key = API_KEY
 
 def generate_response(prompt):
@@ -8,7 +8,7 @@ def generate_response(prompt):
         response = openai.Completion.create(
             engine="text-davinci-003",
             prompt=prompt,
-            max_tokens=50
+            max_tokens=100
         )
         generated_text = response.choices[0].text
         return generated_text
